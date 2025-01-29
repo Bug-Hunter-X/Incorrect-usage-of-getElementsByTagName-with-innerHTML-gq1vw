@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This is another paragraph inside a div.</p>
+  </div>
+  <script>
+    // Correct way to access and modify elements using getElementsByTagName
+    const paragraphs = document.getElementsByTagName('p');
+    for (let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].innerHTML = 'Modified text';
+    }
+  </script>
+</body>
+</html>
