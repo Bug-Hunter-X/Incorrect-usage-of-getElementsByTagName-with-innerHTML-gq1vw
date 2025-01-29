@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This is another paragraph inside a div.</p>
+  </div>
+  <script>
+    // Incorrect way to access element using getElementsByTagName and innerHTML
+    const paragraphs = document.getElementsByTagName('p');
+    paragraphs.innerHTML = 'Modified text'; //This will result in error. paragraphs is a HTMLCollection not a single element. 
+  </script>
+</body>
+</html>
